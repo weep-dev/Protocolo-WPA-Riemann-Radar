@@ -1,0 +1,9 @@
+---
+
+### 5. O Arquivo `.gitignore`
+
+```text
+__pycache__/
+*.pyc
+.env
+.DS_Store
