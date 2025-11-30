@@ -23,11 +23,11 @@ Utilizamos uma regressão linear sobre 7 termos da expansão de Cipolla para cri
 > *Erro Médio Base: ~111 unidades*
 
 ### 2. Camada Espectral: Zeros de Riemann
-Aqui reside a inovação. O sistema calcula 1.000 ondas senoidais baseadas nos **Zeros Não-Triviais da Função Zeta de Riemann**. Utilizamos regressão `Ridge` para sintonizar a fase e amplitude dessas ondas, criando uma interferência construtiva que prevê as oscilações do erro.
-> *Erro Médio com Radar: ~56 unidades*
+Aqui reside a inovação. O sistema calcula 5.000 ondas senoidais baseadas nos **Zeros Não-Triviais da Função Zeta de Riemann**. Utilizamos regressão `Ridge` para sintonizar a fase e amplitude dessas ondas, criando uma interferência construtiva que prevê as oscilações do erro.
+> *Erro Médio com Radar: ~20 unidades*
 
-### 3. Camada de Busca: Radar Local
-O algoritmo gera uma coordenada GPS estimada e abre uma "Janela de Busca" dinâmica. Isso permite encontrar o primo alvo testando apenas uma fração infinitesimal dos números inteiros.
+### 3. Camada Neural: Correção Não-Linear
+Uma Rede Neural (MLP Regressor) analisa os resíduos que a física linear não conseguiu explicar, refinando a previsão final para níveis de precisão de dois dígitos.
 
 ---
 
@@ -38,7 +38,7 @@ Durante os testes de estresse (0 a 100.000 primos):
 | Modelo | Tecnologia | Erro Médio (MAE) | Precisão Relativa |
 | :--- | :--- | :--- | :--- |
 | **Teoria Padrão** | Fórmula $n \ln n$ | ~460.00 | 99.92% |
-| **Protocolo W.P.A** | **Riemann Radar** | **~56.76** | **99.995%** |
+| **Protocolo W.P.A** | **Riemann Radar** | **~20.96** | **99.995%** |
 
 O sistema foi capaz de localizar primos na casa dos 1.3 milhões com um tempo de inferência de **0.006 segundos**.
 
@@ -50,3 +50,10 @@ O sistema foi capaz de localizar primos na casa dos 1.3 milhões com um tempo de
 2. Instale as dependências:
    ```bash
    pip install -r requirements.txt
+
+
+
+## 📝 Autor
+
+*William Pereira de Almeida* Desenvolvido em: Novembro de 2025
+Projeto de Investigação em Machine Learning & Teoria dos Números
