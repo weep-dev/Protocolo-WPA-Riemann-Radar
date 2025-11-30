@@ -38,7 +38,7 @@ Durante os testes de estresse (0 a 100.000 primos):
 | Modelo | Tecnologia | Erro Médio (MAE) | Precisão Relativa |
 | :--- | :--- | :--- | :--- |
 | **Teoria Padrão** | Fórmula $n \ln n$ | ~460.00 | 99.92% |
-| **Protocolo W.P.A** | **Riemann Radar** | **~20.96** | **99.995%** |
+| **Protocolo W.P.A** | **Riemann Radar** | **~20.96** | **99.998%** |
 
 O sistema foi capaz de localizar primos na casa dos 1.3 milhões com um tempo de inferência de **0.006 segundos**.
 
